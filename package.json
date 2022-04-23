@@ -1,0 +1,19 @@
+{
+  "name": "template_js_ms",
+  "version": "1.0.0",
+  "description": "Template for JS microservices connection to MySQL and managing migrations",
+  "main": "index.js",
+  "scripts": {
+    "create-env:dev": "cp ./.envs/.eg.env ./.envs/.dev.env",
+    "create-env:stg": "cp ./.envs/.eg.env ./.envs/.stg.env",
+    "create-env": "cp ./.envs/.eg.env ./.envs/.env",
+    "create-env:all": "npm run create-env:dev && npm run create-env:stg && npm run create-env"
+  },
+  "keywords": [],
+  "author": "Cristian Santos <fernandosdesk@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "sequelize": "^6.19.0",
+    "sequelize-cli": "^6.4.1"
+  }
+}
