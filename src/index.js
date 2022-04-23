@@ -9,7 +9,7 @@ const port = process.env.PORT;
 
 app.get('/api/users', async (req, res) => {
   const users = await getAllUsers()
-  console.log(users)
+  res.status(200).send({users})
 })
 
 app.listen(port, () => console.log(`Hello world app listening on port ${port}!`))
