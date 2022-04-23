@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "create-env": "cp ./.eg.env ./.env",
-    "migrate:dev": "npx sequelize-cli db:migrate"
+    "migrate:dev": "npx sequelize-cli db:migrate",
+    "start": "node src/index.js"
   },
   "keywords": [],
-  "type": "module",
   "author": "Cristian Santos <fernandosdesk@gmail.com>",
   "license": "MIT",
   "dependencies": {
