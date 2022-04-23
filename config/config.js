@@ -1,23 +1,24 @@
-{
-  "development": {
-    "username": "root",
-    "password": null,
-    "database": "database_development",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+module.exports = {
+  "dev": {
+    "username": process.env.DB_DEV_USER,
+    "password": process.env.DB_DEV_PASSWORD,
+    "database": process.env.DB_DEV_DATABASE,
+    "host": process.env.DB_DEV_HOST,
+    "port": process.env.DB_DEV_PORT,
+    "dialect": process.env.DB_DIALECT,
   },
-  "staging": {
-    "username": "root",
-    "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+  "stg": {
+    "username": process.env.DB_STG_USER,
+    "password": process.env.DB_STG_PASSWORD,
+    "database": process.env.DB_STG_DATABASE,
+    "host": process.env.DB_STG_HOST,
+    "dialect": process.env.DB_DIALECT,
   },
-  "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+  "prod": {
+    "username": process.env.DB_USER,
+    "password": process.env.DB_PASSWORD,
+    "database": process.env.DB_DATABASE,
+    "host": process.env.DB_HOST,
+    "dialect": process.env.DB_DIALECT,
   }
 }
